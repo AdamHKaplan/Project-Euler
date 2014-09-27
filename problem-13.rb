@@ -1,3 +1,8 @@
+# problem-13.rb
+# find the first ten digits of the sum of the following 50-digit numbers
+# note: "first ten digits" appears to mean the first ten when reading from left to right,
+# not the lowest ten digits (ones, tens, hundreds, etc...)
+
 the_numbers = [37107287533902102798797998220837590246510135740250,
 46376937677490009712648124896970078050417018260538,
 74324986199524741059474233309513058123726617309629,

@@ -1,4 +1,6 @@
 # problem-17.rb
+# find the total number of letters used among all the numbers in [1..1000] when spelled out.
+# omit hyphens and spaces, and include use of the word "and" (e.g. "one hundred and one")
 
 def numbers_of_letters_in_first_nine_numbers # 1-9
   [3,3,5,4,4,3,5,5,4]
