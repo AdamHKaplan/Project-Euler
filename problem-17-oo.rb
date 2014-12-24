@@ -1,4 +1,4 @@
-# problem-17-oo.rb
+# problem-17.rb
 # find the total number of letters used among all the numbers in [1..1000] when spelled out.
 # omit hyphens and spaces, and include use of the word "and" (e.g. "one hundred and one")
 # more OO than previous answer
