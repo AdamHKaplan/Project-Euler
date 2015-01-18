@@ -22,7 +22,7 @@ function sumOfFactors(n, int){
 }
 function partner(n,int){
   var multiple = n/int;
-  if(multiple !== int && multiple !== n) return  multiple;
+  if(int < multiple && multiple < n) return  multiple;
   else return 0;
 }
 function isFactor(num, check){
