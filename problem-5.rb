@@ -1,27 +1,24 @@
 # problem-5.rb
 # find the smallest positive number that is evenly divisible by all numbers btwn 1..20
-
+solution = 1.0
+divisors = (2..20)
 class Float
   def is_pretty?
     to_i == self
   end
 end
-
-divisors = (2..20)
-solved = false
-iter = 20.0
-while !solved
-
-  divisors.each do |i|
-
-    unless (iter/i).is_pretty?
-      break
-    end
-    if i==20
-      solved = true
-      puts iter
+def lcd(i, si)
+  (2..i).each do |div|
+    if(Float(i)/div).is_pretty? && (Float(si)/div).is_pretty?
+      return div
     end
   end
-  iter+=20
 end
 
+divisors.each do |i|
+  unless (solution/i).is_pretty?
+    solution *= lcd(i, solution * i)
+  end
+end
+
+puts solution.to_i
